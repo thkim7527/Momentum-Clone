@@ -44,6 +44,6 @@ const quotes = [
 const quote = document.querySelector("#quote div:first-child");
 const author = document.querySelector("#quote div:last-child");
 
-const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+const selectedQuote = quotes[Math.floor(Math.random() * quotes.length)];
+quote.innerText = selectedQuote.quote;
+author.innerText = selectedQuote.author;
