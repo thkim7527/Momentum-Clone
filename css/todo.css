@@ -11,15 +11,11 @@
 
 #todoList {
     font-size: 25px;
-
-}
-
-#todoList li {
-    display: inline;
 }
 
 #todoList button {
     background-color: transparent;
     border: none;
     font-size: 25px;
+    cursor: pointer;
 }
