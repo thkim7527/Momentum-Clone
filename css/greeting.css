@@ -1,0 +1,17 @@
+#loginForm {
+}
+
+#loginForm input {
+    width: 400px;
+    height: 80px;
+    
+    font-size: 50px;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: black 3px solid;
+}
+
+#greeting {
+    font-size: 50px;
+}

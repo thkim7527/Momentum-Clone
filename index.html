@@ -3,20 +3,24 @@
     <head>
         <title>Momentum Clone</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/clock.css">
+        <link rel="stylesheet" href="css/greeting.css">
+        <link rel="stylesheet" href="css/todo.css">
+        <link rel="stylesheet" href="css/quote.css">
     </head>
     
     <body>
+        <div id="clock"></div>
+        
         <form id="loginForm" class="hidden">
-            <input required maxlength="15" type="text" placeholder="What is your name?">
-            <button>Log In</button>
+            <input required maxlength="15" type="text">
         </form>
 
-        <h1 id="greeting" class="hidden"></h1>
-
-        <h2 id="clock"></h2>
+        <div id="greeting" class="hidden"></div>
+        
 
         <form id="todoForm">
-            <input type="text" placeholder="Write To Do" required>
+            <input type="text" required>
         </form>
         <ul id="todoList"></ul>
 
@@ -30,6 +34,5 @@
         <script src="js/quote.js"></script>
         <script src="js/background.js"></script>
         <script src="js/todo.js"></script>
-        <script src="js/weather.js"></script>
     </body>
 </html>

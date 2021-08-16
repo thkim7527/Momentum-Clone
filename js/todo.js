@@ -13,27 +13,26 @@ function saveTodo(newTodo) {
 }
 
 function deleteTodo(event) {
-    const li = event.target.parentElement;
-    li.remove();
-    todos = todos.filter((value) => value.id !== parseInt(li.id));
+    const listItem = event.target.parentElement;
+    listItem.remove();
+    todos = todos.filter((value) => value.id !== parseInt(listItem.id));
     localStorage.setItem("todos", JSON.stringify(todos));
 }
 
 function showTodo(newTodo) {
-    const li = document.createElement("li");
-    li.id = newTodo.id;
-    console.log(li.id);
+    const listItem = document.createElement("div");
+    listItem.id = newTodo.id;
 
-    const span = document.createElement("span");
-    span.innerText = newTodo.value;
+    const li = document.createElement("li");
+    li.innerText = newTodo.value;
 
     const button = document.createElement("button");
     button.innerHTML = "&#x274C";
     button.addEventListener("click", deleteTodo)
     
-    li.appendChild(span);
-    li.appendChild(button);
-    todoList.appendChild(li);
+    listItem.appendChild(li);
+    listItem.appendChild(button);
+    todoList.appendChild(listItem);
 }
 
 function handleTodoFormSubmit(event) {

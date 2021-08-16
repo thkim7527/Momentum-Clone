@@ -1,3 +1,13 @@
 .hidden {
     display: none;
 }
+
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+#clock, #greeting, #todoForm, #todoList, #quote {
+    margin: 40px 0px 40px 0px;
+}
